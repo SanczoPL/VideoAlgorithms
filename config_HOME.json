@@ -1,0 +1,15 @@
+﻿{
+	"General":
+	{
+		"LogLevel":0,
+		"ThreadsMax":7,
+		"Path": "/home/user/CloudData/Realtime/StormCloud/",
+		"Filename": "NORM0492",
+		"Codec": "avc1",
+		"FPS" : 30,
+		"Type" : ".mp4",
+		"Sec" : 31
+
+	}
+}
+	
