@@ -29,7 +29,10 @@ if(HOME)
   message(STATUS "HOME Selected")
   configure_file(config_HOME.json ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/config.json)
 endif()
-
+if(NOVOICE)
+  message(STATUS "NOVOICE Selected")
+  configure_file(config_NOVOICE.json ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/config.json)
+endif()
 
 find_package(Qt5Core REQUIRED)
 find_package(Threads REQUIRED)
@@ -39,13 +42,23 @@ include_directories(
     ${OpenCV_INCLUDE_DIRS}
 )
 
+if(HOME)
 set(SRC
   src/main.cc
-  ../../IncludeSpdlog/spdlog.cc
+  ../IncludeSpdlog/spdlog.cc
 )
+endif()
+
+if(NOVOICE)
+set(SRC
+  src/mainNoVoice.cc
+  ../IncludeSpdlog/spdlog.cc
+)
+endif()
+
 
 set(HEADERS
-  ../../IncludeSpdlog/spdlog.h
+  ../IncludeSpdlog/spdlog.h
 )
 
 add_executable(${TARGET_NAME}
@@ -53,4 +66,11 @@ add_executable(${TARGET_NAME}
     ${HEADERS}
 )
 
+if(HOME)
+target_link_libraries(${PROJECT_NAME}  Qt5::Core  ${OpenCV_LIBS} Threads::Threads )
+endif()
+
+if(NOVOICE)
 target_link_libraries(${PROJECT_NAME}  Qt5::Core  ${OpenCV_LIBS} Threads::Threads)
+endif()
+

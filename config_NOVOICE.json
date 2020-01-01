@@ -1,0 +1,15 @@
+{
+	"General":
+	{
+		"LogLevel":0,
+		"ThreadsMax":7,
+        "Path": "/home/gmatczak/temp/102SAVED/",
+        "WritePath": "/home/gmatczak/temp/102SAVED_NOVOICE/",
+		"Codec": "avc1",
+		"FPS" : 60,
+		"Type" : ".MP4",
+		"Sec" : 31
+
+	}
+}
+	

@@ -3,11 +3,11 @@
 	{
 		"LogLevel":0,
 		"ThreadsMax":7,
-		"Path": "/home/user/CloudData/Realtime/StormCloud/",
-		"Filename": "NORM0492",
+		"Path": "/home/gmatczak/Cloud/",
+		"Filename": "NORM0007_1280x720x30",
 		"Codec": "avc1",
 		"FPS" : 30,
-		"Type" : ".mp4",
+		"Type" : ".MP4",
 		"Sec" : 31
 
 	}
