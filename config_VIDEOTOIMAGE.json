@@ -1,0 +1,12 @@
+{
+	"General":
+	{
+		"LogLevel":0,
+		"ThreadsMax":7,
+        "Path": "/run/media/gmatczak/KINGSTON/Cloud/Timelaps/",
+        "WritePath": "/home/gmatczak/genetic/CloudDataset/Image/CirrusCloud/",
+		"Start": 2100,
+		"Stop" : 2150
+	}
+}
+	

@@ -34,6 +34,12 @@ if(NOVOICE)
   configure_file(config_NOVOICE.json ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/config.json)
 endif()
 
+if(VIDEOTOIMAGE)
+  message(STATUS "VIDEOTOIMAGE Selected")
+  configure_file(config_VIDEOTOIMAGE.json ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/config.json)
+endif()
+
+
 find_package(Qt5Core REQUIRED)
 find_package(Threads REQUIRED)
 find_package(OpenCV REQUIRED)
@@ -56,6 +62,13 @@ set(SRC
 )
 endif()
 
+if(VIDEOTOIMAGE)
+set(SRC
+  src/videoToImage.cc
+  ../IncludeSpdlog/spdlog.cc
+)
+
+endif()
 
 set(HEADERS
   ../IncludeSpdlog/spdlog.h
@@ -74,3 +87,6 @@ if(NOVOICE)
 target_link_libraries(${PROJECT_NAME}  Qt5::Core  ${OpenCV_LIBS} Threads::Threads)
 endif()
 
+if(VIDEOTOIMAGE)
+target_link_libraries(${PROJECT_NAME}  Qt5::Core  ${OpenCV_LIBS} Threads::Threads)
+endif()

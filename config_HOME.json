@@ -3,8 +3,8 @@
 	{
 		"LogLevel":0,
 		"ThreadsMax":7,
-		"Path": "/home/gmatczak/Cloud/",
-		"Filename": "NORM0007_1280x720x30",
+		"Path": "/home/gmatczak/tempCloud/",
+		"Filename": "NORM0004_1920x1080x30",
 		"Codec": "avc1",
 		"FPS" : 30,
 		"Type" : ".MP4",
