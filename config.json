@@ -1,0 +1,26 @@
+﻿{
+	"General":
+	{
+		"LogLevel":0,
+		"ThreadsMax":7,
+		"Path": "/home/gmatczak/tempCloud/",
+		"Filename": "NORM0002_1280x720x120",
+		"Codec": "avc1",
+		"FPS" : 30,
+		"Type" : ".MP4",
+		"Sec" : 31
+
+	},
+	"ChangeResolution":
+	{
+		"InputFolder" :"/home/gmatczak/genetic/CloudDataset/Video/CirrusCloud/",
+		"OutputFolder":"/home/gmatczak/genetic/CloudDataset/Video/CirrusCloudLowResolution/",
+		"Width":50,
+		"Height":50,
+		"Codec":"avc1",
+		"FPS" : 30,
+		"Resize": false
+
+	}
+}
+	
